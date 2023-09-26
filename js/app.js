@@ -96,7 +96,7 @@ const removerItem = (indice) => {
 
 }
 
-// ATUALIZAR ITEM ou Altear status para checked ou tirar checked
+// ATUALIZAR ITEM ou Alterar status para checked ou tirar o checked
 const atualizarItem = (indice) => {
     const banco = getBanco()
     banco[indice].status = banco[indice].status === '' ? 'checked' : ''
