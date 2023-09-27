@@ -1,6 +1,6 @@
 'use strict'
 
-// criar array que representara nosso 'banco de dados' local
+// criar array que representará nosso 'banco de dados' local
 let banco = []
 
 // armazenar em constante array function que retorna os valores da chave 'todoList'
@@ -33,14 +33,14 @@ const criarItem = (tarefa, status, indice) => {
 }
 
 // LIMPAR TAREFAS
-// para evitar insercao duplica da lista toda quando chamamos a funcao atualizarTela()
+// para evitar insercao duplicada da lista toda quando chamamos a funcao atualizarTela()
 const limparTarefas = () => {
-    // elemento todoList que eh a nossa lista
+    // elemento todoList que é a nossa lista
     const todoList = document.getElementById('todoList')
 
     // enquanto todoList tiver um primeiro filho
     // remova o ultimo filho que foi adicionado ao todoList
-    // lembrando que a lista eh readicionada a cada nova insercao
+    // lembrando que a lista é readicionada a cada nova insercao
     while (todoList.firstChild) { todoList.removeChild(todoList.lastChild) }
 }
 
